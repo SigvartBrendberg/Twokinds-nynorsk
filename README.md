@@ -1,4 +1,7 @@
+# IMPORTANT! The most recent files are in the gh-pages branch, "img", numbered 1.jpg, 2.jpg...
+
 # Twokinds-nynorsk
+
 Eit prosjekt for å omsetja Twokinds til nynorsk
 
 <a href="http://twokinds.keenspot.com/">Twokinds</a> er ein teikneserie av Thomas J. Fischbach, og er lisensiert under Creative Commons Attribution-NonCommercial-ShareAlike 3.0, som dette er ein lovleg bruk av.
