@@ -17,13 +17,21 @@
 
     <section class="main-content">
       <h3 id="nummer">Side 1</h3>
-      <button onclick="forige()">Forige</button>
-      <button onclick="neste()">Neste</button><br>
-      <img id="teikne" src="img/1.jpg" onclick="neste()"><br>
+      <button onclick="fyrste()">Fyrste</button>
       <button onclick="forige()">Forige</button>
       <button onclick="neste()">Neste</button>
+      <button onclick="siste()">Siste</button><br>
+      <img id="teikne" src="img/1.jpg" onclick="neste()"><br>
+      <button onclick="fyrste()">Fyrste</button>
+      <button onclick="forige()">Forige</button>
+      <button onclick="neste()">Neste</button>
+      <button onclick="siste()">Siste</button>
       <script>
         var nolles = 1;
+        fyrste = function(){
+          nolles=1;
+          updatetwo();
+        };
         forige = function(){
           if(nolles > 1){
             nolles--;
@@ -32,6 +40,10 @@
         };
         neste = function(){
           nolles++;
+          updatetwo();
+        };
+        siste = function(){
+          nolles=23;
           updatetwo();
         };
         updatetwo = function(){
