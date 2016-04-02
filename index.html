@@ -19,7 +19,25 @@
     </section>
 
     <section class="main-content">
-      <img src="img/1.jpg">
+      <img id="teikne" src="img/1.jpg">
+      <button onclick="forige()">Forige</button>
+      <button onclick="neste()">Neste</button>
+      <script>
+        var nolles = 1;
+        forige = function(){
+          if(nolles > 1){
+            nolles--;
+          };
+          updatetwo();
+        };
+        neste = function(){
+          nolles++;
+          updatetwo();
+        };
+        updatetwo = function(){
+          document.getElementById("teikne").src="img/"+nolles+".jpg"
+        };
+      </script>
       <h1>
 <a id="twokinds-nynorsk" class="anchor" href="#twokinds-nynorsk" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Twokinds-nynorsk</h1>
 
