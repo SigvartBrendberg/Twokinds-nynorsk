@@ -11,15 +11,15 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Twokinds-nn</h1>
+      <h1 class="project-name">Twokinds-nynorsk</h1>
       <h2 class="project-tagline">Eit prosjekt for å omsetja Twokinds til nynorsk</h2>
-      <a href="https://github.com/SigvartBrendberg/Twokinds-nynorsk" class="btn">View on GitHub</a>
-      <a href="https://github.com/SigvartBrendberg/Twokinds-nynorsk/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/SigvartBrendberg/Twokinds-nynorsk/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
-      <img id="teikne" src="img/1.jpg">
+      <h3 id="nummer">Side 1</h3>
+      <button onclick="forige()">Forige</button>
+      <button onclick="neste()">Neste</button><br>
+      <img id="teikne" src="img/1.jpg" onclick="neste()"><br>
       <button onclick="forige()">Forige</button>
       <button onclick="neste()">Neste</button>
       <script>
@@ -35,7 +35,8 @@
           updatetwo();
         };
         updatetwo = function(){
-          document.getElementById("teikne").src="img/"+nolles+".jpg"
+          document.getElementById("nummer").innerHTML="Side"+nolles;
+          document.getElementById("teikne").src="img/"+nolles+".jpg";
         };
       </script>
       <h1>
@@ -55,6 +56,9 @@ I "ferdige sider" finn du den noverande nynorske versjonen av Twokinds. Dette er
 <p>For spørsmål, send post til sigvabrend på Google sin posttjeneste.</p>
 
       <footer class="site-footer">
+      <a href="https://github.com/SigvartBrendberg/Twokinds-nynorsk" class="btn">View on GitHub</a>
+      <a href="https://github.com/SigvartBrendberg/Twokinds-nynorsk/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/SigvartBrendberg/Twokinds-nynorsk/tarball/master" class="btn">Download .tar.gz</a>
         <span class="site-footer-owner"><a href="https://github.com/SigvartBrendberg/Twokinds-nynorsk">twokinds-nn</a> is maintained by <a href="https://github.com/SigvartBrendberg">SigvartBrendberg</a>.</span>
       </footer>
 
