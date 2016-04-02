@@ -26,6 +26,8 @@
       <button onclick="forige()">Forige</button>
       <button onclick="neste()">Neste</button>
       <button onclick="siste()">Siste</button>
+      <input type="text" placeholder="eller skriv inn sidetalet her" id="sok">
+      <button onclick="hent">Gå!</button>
       <script>
         var nolles = 1;
         fyrste = function(){
@@ -44,6 +46,10 @@
         };
         siste = function(){
           nolles=25;
+          updatetwo();
+        };
+        hent = function(){
+          noller=Number(document.getElementById("sok").value);
           updatetwo();
         };
         updatetwo = function(){
