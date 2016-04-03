@@ -21,6 +21,7 @@
         var nolles = 1;
         hogst = 35;
         intotal = 911;
+        svensk=862;
         fyrste = function(){
           nolles=1;
           updatetwo();
@@ -76,7 +77,10 @@
 <p>Eit prosjekt for å omsetja Twokinds til nynorsk</p>
 
 <p><a href="http://twokinds.keenspot.com/">Twokinds</a> er ein teikneserie av Thomas J. Fischbach, og er lisensiert under Creative Commons Attribution-NonCommercial-ShareAlike 3.0, som dette er ein lovleg bruk av.</p>
-<p><b>Om du er utolmodig:</b><br><a href="http://twokinds.keenspot.com/">Opprinneleg engelsk verjons</a> av Tom Fischbach.<br><a href="http://twokinds.se/">Svensk versjon</a> av Kindamoody.</p>
+<p id="andre"><b>Om du er utolmodig:</b><br><a href="http://twokinds.keenspot.com/">Opprinneleg engelsk verjons</a> av Tom Fischbach.<br><a href="http://twokinds.se/">Svensk versjon</a> av Kindamoody.</p>
+<script>svenskprogresjon="<b>Om du er utolmodig:</b><br><a href='http://twokinds.keenspot.com/'>Opprinneleg engelsk verjons</a> av Tom Fischbach.<br><a href='http://twokinds.se/">Svensk versjon</a> av Kindamoody.';
+  document.getElementById("andre").innerHTML = svenskprogresjon + " ("+Math.round((svensk/intotal)*1000)/10+" %ferdig)";
+</script>
 
 <p>Omsetjingsprosjektet er gjort tilgjengeleg her for å gjera det mogleg med eit samvirke om å gje Twokinds ein ny språkdrakt, og eventuelt gjera arbeidet for ein ny omsetjar lettare.</p>
 
