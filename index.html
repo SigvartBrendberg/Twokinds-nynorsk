@@ -31,6 +31,7 @@
       <button onclick="hent()">Gå!</button>
       <script>
         var nolles = 1;
+        hogst = 28;
         fyrste = function(){
           nolles=1;
           updatetwo();
@@ -46,7 +47,7 @@
           updatetwo();
         };
         siste = function(){
-          nolles=28;
+          nolles=hogst;
           updatetwo();
         };
         hent = function(){
@@ -54,8 +55,13 @@
           updatetwo();
         };
         updatetwo = function(){
+          if(nolles>hogst){
+          document.getElementById("teikne").src="img/under.jpg";
+          }
+          else{
           document.getElementById("nummer").innerHTML="Side "+nolles;
           document.getElementById("teikne").src="img/"+nolles+".jpg";
+          
         };
       </script>
       
