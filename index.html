@@ -17,19 +17,7 @@
     </section>
 
     <section class="main-content">
-      <h3 id="nummer">Side 1</h3>
-      <button onclick="fyrste()">Fyrste</button>
-      <button onclick="forige()">Førre</button>
-      <button onclick="neste()">Neste</button>
-      <button onclick="siste()">Siste</button><br>
-      <img id="teikne" src="img/1.jpg" onclick="neste()"><br>
-      <button onclick="fyrste()">Fyrste</button>
-      <button onclick="forige()">Førre</button>
-      <button onclick="neste()">Neste</button>
-      <button onclick="siste()">Siste</button>
-      <input type="text" placeholder="eller skriv inn sidetalet her" id="sok">
-      <button onclick="hent()">Gå!</button>
-      <script>
+            <script>
         var nolles = 1;
         hogst = 28;
         fyrste = function(){
@@ -61,10 +49,20 @@
           else{
           document.getElementById("nummer").innerHTML="Side "+nolles;
           document.getElementById("teikne").src="img/"+nolles+".jpg";
-          
         };
       </script>
-      
+      <h3 id="nummer">Side 1</h3>
+      <button onclick="fyrste()">Fyrste</button>
+      <button onclick="forige()">Førre</button>
+      <button onclick="neste()">Neste</button>
+      <button onclick="siste()">Siste</button><br>
+      <img id="teikne" src="img/1.jpg" onclick="neste()"><br>
+      <button onclick="fyrste()">Fyrste</button>
+      <button onclick="forige()">Førre</button>
+      <button onclick="neste()">Neste</button>
+      <button onclick="siste()">Siste</button>
+      <input type="text" placeholder="eller skriv inn sidetalet her" id="sok">
+      <button onclick="hent()">Gå!</button>
 <h1>Nytt:</h1>
 <p>Spegelside på <a href="http://2kinds.tk/">2kinds.tk</a></p>
 <p>Fyrste versjon er oppe!</p>
