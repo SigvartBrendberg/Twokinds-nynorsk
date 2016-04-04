@@ -18,13 +18,13 @@ neste = function(){
 update = function(){
   var tal = no;
   if(no < 1000){
-    tal = "0" + no;
+    tal = "0" + tal;
   };
   if(no < 100){
-    tal = "0" + no;
+    tal = "0" + tal;
   };
   if(no < 10){
-    tal = "0" + no;
+    tal = "0" + tal;
   };
   document.getElementById("content").src = "js/brfBin/fv0"+tal+".GIF";
   document.getElementById("tittel").innerHTML = "Side "+no;
