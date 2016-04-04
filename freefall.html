@@ -5,6 +5,7 @@
 <link rel="Shortcut Icon" href="http://freefall.purrsia.com/funstuff/freefall.ico">
 <script>
 no = 1;
+maks = 22;
 forige = function(){
   if(no > 1){
     no--;
@@ -17,6 +18,10 @@ neste = function(){
 };
 hent = function(){
   no = Number(document.getElementById("sok").value);
+  update();
+};
+siste = function(){
+  no = maks;
   update();
 };
 update = function(){
@@ -43,6 +48,7 @@ update = function(){
 <h3 id=tittel>Side 1</h3>
 <img id="content" src="js/brfBin/fv00001.GIF"><br>
 <button onclick="forige()">Førre</button><button onclick="neste()">Neste</button>
+<button onclick="siste()">Siste</button>
 <input type="text" placeholder="eller skriv inn sidetalet her" id="sok">
 <button onclick="hent()">Gå!</button>
 <p>Copyright Mark Stanley, alle rettar.</p>
