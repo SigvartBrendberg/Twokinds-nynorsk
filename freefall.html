@@ -15,6 +15,10 @@ neste = function(){
   no++;
   update();
 };
+hent = function(){
+  no = Number(document.getElementById("sok").value);
+  update();
+};
 update = function(){
   var tal = no;
   if(no < 1000){
@@ -36,6 +40,8 @@ update = function(){
 <h3 id=tittel>Side 1</h3>
 <img id="content" src="js/brfBin/fv00001.GIF"><br>
 <button onclick="forige()">Førre</button><button onclick="neste()">Neste</button>
+<input type="text" placeholder="eller skriv inn sidetalet her" id="sok">
+<button onclick="hent()">Gå!</button>
 <p>Copyright Mark Stanley, alle rettar.</p>
 <p>Norsk tekst av Sigvart Brendberg, ingen rettar.</p>
 <p><a href="http://freefall.purrsia.com/">Opprinneleg engelsk serie</a></p>
