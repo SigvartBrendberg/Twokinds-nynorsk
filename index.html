@@ -17,63 +17,15 @@
     </section>
 
     <section class="main-content">
-            <script>
-            //Note to everyone who complains: yes, using JS instead of static pages is a bad idea.
-        var nolles = 1;
-        hogst = 104;
-        intotal = 911;
-        svensk=862;
-        fyrste = function(){
-          nolles=1;
-          updatetwo();
-        };
-        forige = function(){
-          if(nolles > 1){
-            nolles--;
-          };
-          updatetwo();
-        };
-        neste = function(){
-          nolles++;
-          updatetwo();
-        };
-        siste = function(){
-          nolles=hogst;
-          updatetwo();
-        };
-        hent = function(){
-          nolles=Number(document.getElementById("sok").value);
-          updatetwo();
-        };
-        updatetwo = function(){
-          if(nolles>hogst){
-          document.getElementById("teikne").src="img/under.jpg";
-          document.getElementById("nummer").innerHTML="Side "+nolles;
-          }
-          else{
-          document.getElementById("nummer").innerHTML="Side "+nolles;
-          document.getElementById("teikne").src="img/"+nolles+".jpg";
-          };
-        };
-      </script>
-      <noscript>Sigvart var for lat til å laga sida utan JavaScript. Skru det på igjen, eller gå til <a href="http://2kinds.tk/">2kinds.tk</a> eller <a href="http://sigvartbrendberg.github.io/Twokinds-nynorsk/img/page1.html">Hit</a></noscript>
-      <h2 id="nummer">Side 1</h2>
-      <button onclick="fyrste()" style="color: #c65901;">Fyrste</button>
-      <button onclick="forige()" style="color: #c65901;">Førre</button>
-      <button onclick="neste()" style="color: #00ffd5;">Neste</button>
-      <button onclick="siste()" style="color: #c65901;">Siste</button><br>
-      <img id="teikne" src="img/1.jpg" onclick="neste()"><br>
-      <button onclick="fyrste()" style="color: #c65901;">Fyrste</button>
-      <button onclick="forige()" style="color: #c65901;">Førre</button>
-      <button onclick="neste()" style="color: #00ffd5;">Neste</button>
-      <button onclick="siste()" style="color: #c65901;">Siste</button>
-      <input type="text" placeholder="eller skriv inn sidetalet her" id="sok">
-      <button onclick="hent()" style="color: #c65901;">Gå!</button>
-      <p>Tips: <a href="http://sigvartbrendberg.github.io/Twokinds-nynorsk/img/page1.html">Arkivet</a> er lettare å navigera i.<br>(Du kan også linka sider derifrå)</p>
+      <h2 id="nummer">Nyaste side: 105</h2>
+      <p><a href="page1.html"><img src="fyrste.png"></a> <a href="page104.html"><img src="forre.png"></a> <a href="page105.html"><img src="arkiv.png"></a></p>
+      <img id="teikne" src="img/105.jpg"><br>
+      <p><a href="page1.html"><img src="fyrste.png"></a> <a href="page104.html"><img src="forre.png"></a> <a href="page105.html"><img src="arkiv.png"></a></p>
 <h1>Nytt:</h1>
 <p>Spegelside på <a href="http://2kinds.tk/">2kinds.tk</a></p>
 <p>Fyrste versjon er oppe!</p>
-<p id="progress"></p><script>document.getElementById("progress").innerHTML=Math.round((hogst/intotal)*1000)/10+" % ferdig! ("+hogst+" av "+intotal+")"</script>
+<p>Andre versjon er oppe! (Utan JS)</p>
+<p>105/912</p>
       <h1>
 <a id="twokinds-nynorsk" class="anchor" href="#twokinds-nynorsk" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Twokinds-nynorsk</h1>
 
@@ -81,7 +33,6 @@
 
 <p><a href="http://twokinds.keenspot.com/">Twokinds</a> er ein teikneserie av Thomas J. Fischbach, og er lisensiert under Creative Commons Attribution-NonCommercial-ShareAlike 3.0, som dette er ein lovleg bruk av.</p>
 <p><b>Om du er utolmodig:</b><br><a href="http://twokinds.keenspot.com/">Opprinneleg engelsk verjons</a> av Tom Fischbach.<br><a href="http://twokinds.se/">Svensk versjon</a> av Kindamoody.</p>
-<p id="andre"></p><script>document.getElementById("andre").innerHTML="("+Math.round((svensk/intotal)*1000)/10+ " % ferdig)"</script>
 
 <p>Omsetjingsprosjektet er gjort tilgjengeleg her for å gjera det mogleg med eit samvirke om å gje Twokinds ein ny språkdrakt, og eventuelt gjera arbeidet for ein ny omsetjar lettare.</p>
 
